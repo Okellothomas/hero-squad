@@ -1,0 +1,51 @@
+{{#partial "content"}}
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: blue; font-size:2em"> My Hero Squad</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/squads"> My Squads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/heroes">My Heroes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <form action="/myheros" method="POST">
+            <div class="form-group ">
+                <label for="name">Enter Your Hero's Name</label>
+                <input id="name" name="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="age">Enter Your Hero's Age</label>
+                <input id="age" name="age" class="form-control" type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="power">Enter Your Hero's Super Power</label>
+                <input id="power" name="power" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="weakness">Enter Your Hero's Weakness</label>
+                <input id="weakness" name="weakness" class="form-control" type="text">
+            </div>
+
+
+            <button type="submit" class="btn aqua-gradient">Add your hero</button>
+        </form>
+    </div>
+
+
+{{/partial}}
+
+{{> layout.hbs}}
