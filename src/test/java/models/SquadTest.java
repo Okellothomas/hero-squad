@@ -32,7 +32,14 @@ public class SquadTest {
         String sName = "Winners";
         assertEquals(sName, squad.getsName());
     }
-
+    @Test
+    public void addhero_toSquadList_True() {
+        Squad squad = new Squad(9,"Winners","Academia");
+        Hero hero = new Hero("Messi",33,"Dribbler","Emotional");
+        squad.addMyHero(hero);
+        assertTrue(squad.getsHeros().contains(hero));
+    }
+    //
     @Test
     public void AllSquadesCorrectlyReturned_true(){
         Squad squad = new Squad(9,"Winners","Academia");
