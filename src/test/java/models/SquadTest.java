@@ -39,7 +39,7 @@ public class SquadTest {
         squad.addMyHero(hero);
         assertTrue(squad.getsHeros().contains(hero));
     }
-
+    //
     @Test
     public void AllSquadesCorrectlyReturned_true(){
         Squad squad = new Squad(9,"Winners","Academia");
