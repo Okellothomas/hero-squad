@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Squad {
     // declaring the variables for Squad
-    private String sSize;
+    private int sSize_max;
     private String sName;
     private String sCause;
     private List<Hero> sHeros;
     private static List<Squad> sInstances = new ArrayList<>();
     private int sId;
 
-    public Squad(String sSize, String sName, String sCause) {
-        this.sSize = sSize;
+    public Squad(int sSize_max, String sName, String sCause) {
+        this.sSize_max = sSize_max;
         this.sName = sName;
         this.sCause = sCause;
         sInstances.add(this);
@@ -21,8 +21,8 @@ public class Squad {
         this.sHeros = new ArrayList<Hero>();
     }
 
-    public String getsSize() {
-        return sSize;
+    public int getsSize_max() {
+        return sSize_max;
     }
 
     public String getsName() {
@@ -33,5 +33,28 @@ public class Squad {
         return sCause;
     }
 
+    public List<Hero> getsHeros() {
+        return sHeros;
+    }
+
+    public static List<Squad> getsInstances() {
+        return sInstances;
+    }
+
+    public int getsId() {
+        return sId;
+    }
+
+    public static void clear(){
+        sInstances.clear();
+    }
+
+    public static Squad findById(int sId){
+        return sInstances.get(sId - 1);
+    }
+
+    public void addMyHero(Hero hero){
+        sHeros.add(hero);
+    }
 
 }
