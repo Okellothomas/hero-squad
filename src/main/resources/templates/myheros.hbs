@@ -1,0 +1,30 @@
+{{#partial "content"}}
+    <div>
+        <form action="/myheros" method="POST">
+            <div class="form-group ">
+                <label for="name">Enter Your Hero's Name</label>
+                <input id="name" name="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="age">Enter Your Hero's Age</label>
+                <input id="age" name="age" class="form-control" type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="power">Enter Your Hero's Super Power</label>
+                <input id="power" name="power" class="form-control" type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="weakness">Enter Your Hero's Weakness</label>
+                <input id="weakness" name="weakness" class="form-control" type="text">
+            </div>
+
+
+            <button type="submit" class="btn aqua-gradient">Add your hero</button>
+        </form>
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}
