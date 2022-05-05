@@ -1,0 +1,21 @@
+{{#partial "content"}}
+    <div class="list-group">
+        {{#each Squads}}
+            <div class="card" style="color:white;">
+                <div class="card-body">
+                    <ul type="none">
+                        <li><h4> Squad Size:{{ sSize_max }}</h4></li>
+                        <li><h4> Squad Name:{{ sName }} Years Old.</h4> </li>
+                        <li><h4>Squad Cause: {{ sCause }}</h4></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr style="height:2px; width:100%; border-width:0; color:black; background-color:black">
+        {{/each}}
+    </div>
+
+    <p type="submit" class="text-center"><a class="btn btn-outline-primary" href="/mysquad"> Add a new Squad.</a> </p>
+{{/partial}}
+
+{{> layout.hbs}}

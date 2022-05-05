@@ -1,28 +1,26 @@
 {{#partial "content"}}
     <div>
-        <form action="/heros" method="POST">
-            <div class="form-group ">
-                <label for="name">Enter Your Hero's Name</label>
-                <input id="name" name="name" class="form-control" type="text">
-            </div>
-            <div class="form-group">
-                <label for="age">Enter Your Hero's Age</label>
-                <input id="age" name="age" class="form-control" type="number">
-            </div>
+        {{#each Heroes}}
 
-            <div class="form-group">
-                <label for="power">Enter Your Hero's Super Power</label>
-                <input id="power" name="power" class="form-control" type="text">
+            <div class="card">
+                <div class="card-body">
+                    <ul type="none">
+                        <li><h4> Hero Name:{{name}}</h4></li>
+                        <li><h4> Hero Age:{{age}} Years Old.</h4> </li>
+                        <li><h4>Hero Powers: {{power}}</h4></li>
+                        <li><h4>Hero Weaknesses: {{weakness}}</h4></li>
+                    </ul>
+                </div>
             </div>
+            <hr style="height:2px; width:100%; border-width:0; color: black; background-color:black;">
 
-            <div class="form-group">
-                <label for="weakness">Enter Your Hero's Weakness</label>
-                <input id="weakness" name="weakness" class="form-control" type="text">
-            </div>
+        {{/each}}
+                <br>
+                <p><a class="btn btn-lg btn-success" href="/newhero/new">+ Add New Hero</a></p>
+                <p><a class="btn btn-lg btn-success" href="/myheros/new">+ Add New Hero</a></p>
+                <p type="submit"> <a class="btn btn-outline-primary" href="/mysquad-form"> Create a new Squad.</a> </p>
 
-
-            <button type="submit" class="btn aqua-gradient">Add your hero</button>
-        </form>
+                <p><a class="btn btn-lg btn-danger" href="/mysquad">All squads</a></p>
     </div>
 
 {{/partial}}
