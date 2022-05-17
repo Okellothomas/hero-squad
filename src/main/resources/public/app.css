@@ -1,10 +1,17 @@
-body.view{
-color: red;
-text-align: center;
-font-size: 80px;
-background-color: green;
+body{
+background-image: url('/images/backgroundone.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-h1.view{
-color: white;
+h1{
+color: red;
+}
+
+.col-12 a{
+border-radius: 50%
+margin: 3%;
+}
+.col-md-12{
+text-align:center;
 }

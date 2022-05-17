@@ -1,26 +1,23 @@
 {{#partial "content"}}
     <div>
-        {{#each Heroes}}
+        {{#each hero}}
 
-            <div class="card">
+            <div class="card" style="color:white; text-align: center;">
                 <div class="card-body">
                     <ul type="none">
-                        <li><h4> Hero Name:{{name}}</h4></li>
-                        <li><h4> Hero Age:{{age}} Years Old.</h4> </li>
-                        <li><h4>Hero Powers: {{power}}</h4></li>
-                        <li><h4>Hero Weaknesses: {{weakness}}</h4></li>
+                        <li><h4> Name of Hero: {{name}}</h4></li>
+                        <li><h4> Age of Hero: {{age}} Years Old.</h4> </li>
+                        <li><h4>Power of the Hero: {{power}}</h4></li>
+                        <li><h4>Weakness of the Hero: {{weakness}}</h4></li>
                     </ul>
                 </div>
             </div>
             <hr style="height:2px; width:100%; border-width:0; color: black; background-color:black;">
 
         {{/each}}
-                <br>
-                <p><a class="btn btn-lg btn-success" href="/newhero/new">+ Add New Hero</a></p>
-                <p><a class="btn btn-lg btn-success" href="/myheros/new">+ Add New Hero</a></p>
-                <p type="submit"> <a class="btn btn-outline-primary" href="/mysquad-form"> Create a new Squad.</a> </p>
+        <br>
+        <p><a class="btn btn btn-default" href="/myheros/new" style="text-align: center;">Add Hero</a></p>
 
-                <p><a class="btn btn-lg btn-danger" href="/mysquad">All squads</a></p>
     </div>
 
 {{/partial}}

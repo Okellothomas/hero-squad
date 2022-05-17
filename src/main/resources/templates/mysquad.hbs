@@ -1,21 +1,26 @@
 {{#partial "content"}}
     <div class="list-group">
-        {{#each Squads}}
-            <div class="card" style="color:white;">
-                <div class="card-body">
-                    <ul type="none">
-                        <li><h4> Squad Size:{{ sSize_max }}</h4></li>
-                        <li><h4> Squad Name:{{ sName }} Years Old.</h4> </li>
-                        <li><h4>Squad Cause: {{ sCause }}</h4></li>
 
-                    </ul>
-                </div>
+            <div class="card" style="color:white;">
+    {{#each squad}}
+        <div class="card-body">
+            <ul type="none">
+
+                <li><h4> Squad Size: {{ size }}</h4></li>
+                <li><h4> Squad Name: {{ name  }} .</h4> </li>
+                <li><h4>Squad Cause: {{ cause }}</h4></li>
+
+            </ul>
+        </div>
+        <a class="btn btn-primary" href="/myheros/new"> New Hero.</a>
+    {{/each}}
             </div>
             <hr style="height:2px; width:100%; border-width:0; color:black; background-color:black">
-        {{/each}}
+            </div>
+
     </div>
 
-    <p type="submit" class="text-center"><a class="btn btn-outline-primary" href="/mysquad"> Add a new Squad.</a> </p>
+    <a class="btn btn-success" href="/mysquad/new"> Add new Squad.</a>
 {{/partial}}
 
 {{> layout.hbs}}

@@ -1,26 +1,26 @@
 {{#partial "content"}}
     <div style="text-align:center; color:white">
         <h3 style="color:lime; margin-bottom:2%;">  Add a new Squad </h3>
-        <form action="/mysquad/new" method="post">
+        <form action="/mysquad" method="post">
             <div class="form-group ">
                 <label for="name">Enter Your Squad's Name</label>
-                <input id="name" name="name" class="form-control" type="text">
+                <input id="name" name="name" class="form-control" type="text" required>
             </div>
             <div class="form-group">
                 <label for="size">Enter Your Squad's Size</label>
-                <input id="size" name="size" class="form-control" type="number">
+                <input id="size" name="size" class="form-control" type="number" value="1">
             </div>
 
             <div class="form-group">
                 <label for="power">Enter Your Squad's Cause</label>
-                <input id="cause" name="cause" class="form-control" type="text">
+                <input id="cause" name="cause" class="form-control" type="text" required>
             </div>
 
 
-            <button type="submit" class="btn aqua-gradient" style="color:black;">Add your new Squad</button>
+            <button type="submit" class="btn aqua-gradient" style="color:black;">Add new Squad</button>
 
             <hr>
-            <p><a class="btn aqua-gradient" href="/myheros/new" style="color:black; border: 2px solid white;" >Add a hero</a></p>
+<!--            <p><a class="btn aqua-gradient" href="/mysquad" style="color:black; border: 2px solid white;" >Add a hero</a></p>-->
         </form>
     </div>
 

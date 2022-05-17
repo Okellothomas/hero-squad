@@ -1,27 +1,27 @@
 {{#partial "content"}}
     <div style="margin-top:0.2%; margin-bottom:5%; text-align:center; color:white">
-        <form action="/myheros/new" method="post">
+        <form action="/myheros" method="post">
             <div class="form-group ">
                 <label for="name">Enter Your Hero's Name</label>
-                <input id="name" name="name" class="form-control" type="text">
+                <input id="name" name="name" class="form-control" type="text" required>
             </div>
             <div class="form-group">
                 <label for="age">Enter Your Hero's Age</label>
-                <input id="age" name="age" class="form-control" type="number">
+                <input id="age" name="age" class="form-control" type="number" value="1">
             </div>
 
             <div class="form-group">
                 <label for="power">Enter Your Hero's Super Power</label>
-                <input id="power" name="power" class="form-control" type="text">
+                <input id="power" name="power" class="form-control" type="text" required>
             </div>
 
             <div class="form-group">
                 <label for="weakness">Enter Your Hero's Weakness</label>
-                <input id="weakness" name="weakness" class="form-control" type="text">
+                <input id="weakness" name="weakness" class="form-control" type="text" required>
             </div>
 
 
-            <button type="submit" class="btn aqua-gradient" href="/mysquad-form" style="color:black;">Add your hero</button>
+            <button type="submit" class="btn btn-default">Add hero</button>
         </form>
     </div>
 

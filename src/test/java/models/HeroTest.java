@@ -14,27 +14,27 @@ public class HeroTest {
     public void getmName_myHeoresName_String(){
         Hero hero = new Hero("Messi", 46, "Tribbler","eating");
         String mName = "Messi";
-        assertEquals("Messi", hero.getmName());
+        assertEquals("Messi", hero.getName());
     }
 
     @Test
     public void getmAge_myHeoresAge_Int(){
         Hero hero = new Hero("Messi", 46, "Tribbler","eating");
         int mAge = 46;
-        assertEquals(46, hero.getmAge());
+        assertEquals(46, hero.getAge());
     }
     @Test
     public void getmSpecialPower_myHeoresName_String(){
         Hero hero = new Hero("Messi", 46, "Tribbler","eating");
         String mSpecialpower = "Tribbler";
-        assertEquals(mSpecialpower, hero.getmSpecialPower());
+        assertEquals(mSpecialpower, hero.getPower());
     }
 
     @Test
     public void getmWeaknesses_myHeoresWeaknesses_String(){
         Hero hero = new Hero("Messi", 46, "Tribbler","eating");
         String mWeaknesses = "eating";
-        assertEquals(mWeaknesses, hero.getmWeaknesses());
+        assertEquals(mWeaknesses, hero.getWeakness());
     }
 
     @Test
@@ -47,6 +47,6 @@ public class HeroTest {
     public void getId_HeroInstantiatedWithAnId_1(){
         Hero.clearAllHeros();
         Hero hero = new Hero("Messi", 46, "Tribbler","eating");
-        assertEquals(1,hero.getmId());
+        assertEquals(1,hero.getId());
     }
 }
